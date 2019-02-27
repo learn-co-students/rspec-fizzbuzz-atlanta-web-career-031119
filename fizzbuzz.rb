@@ -2,14 +2,12 @@
 # See README.md for instructions on how to do this
 
 def fizzbuzz(entry)
-  response = ''
+  response = nil
   if entry % 3 == 0
-    response = response + 'Fizz'
+    response = response.to_s + 'Fizz'
   end
   if entry % 5 == 0
-    response = response + 'Buzz'
-  elsif response == ''
-    return nil
+    response = response.to_s + 'Buzz'
   end
   print response
   return response
